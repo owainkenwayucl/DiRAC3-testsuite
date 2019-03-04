@@ -1,2 +1,2 @@
-module remove compilers mpi
+module remove compilers mpi cmake
 module load compilers/gnu/4.9.2 python/2.7.12 openblas/0.2.14/gnu-4.9.2 python2/recommended gsl/1.16/gnu-4.9.2 mpi/openmpi/1.8.4/gnu-4.9.2 hdf/5-1.8.15-p1-ompi/gnu-4.9.2 libtool/2.4.6 autoconf/2.69 automake/1.16.1 cmake/3.7.2

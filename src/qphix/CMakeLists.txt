@@ -43,7 +43,7 @@ ExternalProject_Add(qphix-benchmark
     CC=${CMAKE_C_COMPILER} CXX=${CMAKE_CXX_COMPILER} ./configure
     "CXXFLAGS=${QPHIX_CXX_FLAGS}" "CFLAGS=${QPHIX_C_FLAGS}"
     --enable-parallel-arch=parscalar --enable-soalen=8 --enable-proc=AVX --enable-openmp
-    --prefix=${CMAKE_SOURCE_DIR} --with-qmp=${CMAKE_SOURCE_DIR} --without-qdp
+    --prefix=${CMAKE_SOURCE_DIR} --with-qmp=${CMAKE_SOURCE_DIR}
   BUILD_COMMAND make
   INSTALL_COMMAND cd ${CMAKE_BINARY_DIR}/qphix-benchmark/tests && make install)
 

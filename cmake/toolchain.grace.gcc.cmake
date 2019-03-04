@@ -1,7 +1,7 @@
 # Compilers
-set(CMAKE_C_COMPILER       /shared/ucl/apps/gcc/4.9.2/bin/gcc)
-set(CMAKE_CXX_COMPILER     /shared/ucl/apps/gcc/4.9.2/bin/g++)
-set(CMAKE_Fortran_COMPILER /shared/ucl/apps/gcc/4.9.2/bin/gfortran)
+set(CMAKE_C_COMPILER       mpicc)
+set(CMAKE_CXX_COMPILER     mpic++)
+set(CMAKE_Fortran_COMPILER mpifort)
 
 # Hardware Specification
 set(DIRAC3_HOST          grace)

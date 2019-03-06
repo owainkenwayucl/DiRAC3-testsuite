@@ -2,13 +2,11 @@
 
 #$ -N ${DIRAC3_JOB_NAME}
 #$ -l h_rt=00:10:00
+#$ -cwd
+#$ -pe mpi 32
 
 # Load modules
 source ${DIRAC3_MODULE_FILE}
-
-# Additional environment variable settings for Intel compiler
-export KMP_AFFINITY=disabled
-export MPICH_MAX_THREAD_SAFETY=multiple
 
 # Run the benchmark
 source ${DIRAC3_RUN_SCRIPT}
